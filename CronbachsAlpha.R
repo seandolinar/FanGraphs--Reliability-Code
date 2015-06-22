@@ -106,6 +106,8 @@ write.csv(out.df, file=paste(out.dir, 'fg_alpha_out_PC_.csv'), row.names=F)
 ####FanGraphs Sampling####
 ##########################
 
+#Sets if the data matrix out of the prep function to be random or chronological...T = random, F = chronological
+Random = T
 PA.list <- seq(from=10, to=500, by=10) #600 PA, 500 AB, 400 BIP
 
 ptm <- proc.time() #times
@@ -153,6 +155,8 @@ proc.time() - ptm
 
 
 write.csv(out.df, file=paste(out.dir, 'fg_alpha_out_JP_20092014_.csv'), row.names=F)
+
+
 
 
 
